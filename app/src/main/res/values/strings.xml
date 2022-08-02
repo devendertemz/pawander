@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Pawnder</string>
+    <string name="splash_screen_text">Customize your bouquet on the\ngo with great ease</string>
+    <string name="get_started">Get Started</string>
+    <string name="Registerhere">New Customer? <font color='#D7A00D'> Register here</font></string>
+    <string name="CLogin">Already Customer? <font color='#D7A00D'> Click here to Login</font></string>
+
+
+
+
+    <style name="BottomSheetStyleTheme" parent="Theme.Design.Light.BottomSheetDialog">
+
+        <!--  <item name="bottomSheetStyle">@style/Widget.Design.BottomSheet.Modal</item>-->
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+        <!--        <item name="android:background">@drawable/bottomsheet</item>-->
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+
+        <item name="behavior_peekHeight">500dp</item>
+
+        <!--        <item name="android:background">@drawable/rounded_dialog_layout</item>-->
+        <item name="android:background">@android:color/transparent</item>
+
+
+    </style>
+
+    <style name="selectRelationSpinner" >
+        <item name="android:text">Select Relationship</item>
+        <item name="android:textSize">12sp</item>
+        <!--       <item name="android:foreground">@drawable/spinner_draweble_resource</item>-->
+    </style>
+
+</resources>
