@@ -3,7 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.thetemz.pawnder">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
+        android:largeHeap="true"
+        android:hardwareAccelerated="false"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -14,8 +24,11 @@
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".OnboardingPageActivity"
+            android:name=".Activity.AddNewPetListActivity"
             android:exported="false" />
+      <!--  <activity
+            android:name="Activity.OnboardingPageActivity"
+            android:exported="false" />-->
         <activity
             android:name=".Activity.OnboardingPageActivity"
             android:exported="false" />

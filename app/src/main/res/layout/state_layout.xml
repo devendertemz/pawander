@@ -21,5 +21,13 @@
         android:text="ImSmart"
         android:textColor="@color/custom_text_color"
       />
+    <View
+        android:layout_marginTop="5dp"
+        android:background="#E4E2E2"
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+    </View>
 
 </LinearLayout>

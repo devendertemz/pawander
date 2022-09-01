@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LLeditAddress"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.AddNewPetListActivity">
+    >
+
+    <TextView
+
+        android:id="@+id/btn_address"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/ripple_effect_with_semicircle_edge"
+        android:fontFamily="@font/interblack"
+        android:gravity="center"
+        android:text="Add New Pet"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:id="@+id/tvCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:fontFamily="@font/interblack"
+        android:gravity="center"
+        android:text="No Data Found"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:visibility="gone" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/addressRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:itemCount="5"
+        tools:listitem="@layout/custom_petlist_layout" />
+</LinearLayout>
+

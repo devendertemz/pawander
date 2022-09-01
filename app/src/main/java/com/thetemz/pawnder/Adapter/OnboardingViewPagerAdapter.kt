@@ -11,11 +11,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
-import com.thetemz.pawnder.Modal.SliderDataItem
 import com.thetemz.pawnder.R
+import com.thetemz.pawnder.model.SliderDataItem
 
 class OnboardingViewPagerAdapter(
     var context: Context,

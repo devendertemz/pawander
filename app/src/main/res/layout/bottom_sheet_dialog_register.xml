@@ -271,11 +271,36 @@
                         </LinearLayout>
 
                         <LinearLayout
+                            android:visibility="gone"
                             android:id="@+id/petadoptionLL"
+
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:visibility="gone">
+                            android:layout_gravity="center"
+
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edit_text_rounded_rectangle_border"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+
+                            <Spinner
+                                android:id="@+id/AccountSubTypeSP"
+                                style="@style/selectRelationSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:gravity="center_vertical"
+                                android:popupBackground="#ffffff"
+                                tools:listitem="@layout/state_layout" />
+
+
+                        </LinearLayout>
+
+                <!--        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
 
 
                             <RadioGroup
@@ -315,7 +340,7 @@
                                     android:textSize="16dp" />
 
                             </RadioGroup>
-                        </LinearLayout>
+                        </LinearLayout>-->
 
                         <EditText
                             android:id="@+id/addressET"

@@ -66,7 +66,7 @@
                     app:startIconDrawable="@drawable/ic_cil_phone">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/et_mail_id"
+                        android:id="@+id/phoneet"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/edit_text_rounded_rectangle_border"

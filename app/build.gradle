@@ -1,12 +1,14 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+//    id 'androidx.navigation.safeargs'
+  //  id 'androidx.navigation.safeargs.kotlin'
     id 'kotlin-kapt'
 }
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     buildFeatures {
         viewBinding = true
@@ -46,7 +48,6 @@ android {
 dependencies {
 
 //pinview
-    implementation 'com.chaos.view:pinview:1.4.4'
 
 
     implementation 'androidx.core:core-ktx:1.7.0'
@@ -83,6 +84,27 @@ dependencies {
     implementation "androidx.core:core-ktx:+"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
+
+    implementation "androidx.activity:activity-ktx:1.5.1"
+
+    implementation "androidx.fragment:fragment-ktx:1.5.1"
+
+
+// Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.0'
+    implementation "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2"
+    implementation 'com.squareup.okhttp3:okhttp:4.2.2'
+// Coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9'
+    def nav_version = '2.4.1'
+    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
+    implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
+    // imageview from url
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 
 }
 /*

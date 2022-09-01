@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <item android:title="Shop By Category"/>
+
+    <item android:title="Electronic Accessories">
+        <menu>
+
+            <item android:title="Mobile"
+                android:id="@+id/item_mobile"
+                />
+            <item android:title="Laptop and DeskTop"
+                android:id="@+id/item_laptop_desktop"
+                />
+            <item android:title="Washing Matchine"
+                android:id="@+id/item_washing_machine"
+                />
+        </menu>
+    </item>
+
+    <item android:title="Cloths">
+        <menu>
+            <item android:title="Mens_Dress"
+                android:id="@+id/item_mens_dress"
+                />
+            <item android:title="Womens_Dress"
+                android:id="@+id/item_womes_dress"
+                />
+            <item android:title="Child"
+                android:id="@+id/item_child_dress"
+                />
+        </menu>
+    </item>
+
+    <item android:title="">
+        <menu>
+            <item android:title="My Orders"
+                android:id="@+id/item_my_order"
+                />
+            <item android:title="My Cart"
+                android:id="@+id/item_my_cart"
+                />
+            <item android:title="My Wishlist"
+                android:id="@+id/item_my_wishlist"
+                />
+            <item android:title="My Account"
+                android:id="@+id/item_my_account"
+                />
+            <item android:title="My Notification"
+                android:id="@+id/item_notification"
+                />
+            <item android:title="My Chats"
+                android:id="@+id/item_my_chats"
+                />
+        </menu>
+
+    </item>
+
+    <item android:title="Notification Preferences">
+        <menu>
+            <item android:title="Help Center"
+                android:id="@+id/item_help_center"
+                />
+            <item android:title="Privacy Policy"
+                android:id="@+id/item_privacy_policy"
+                />
+            <item android:title="Legal"
+                android:id="@+id/item_legal"
+                />
+        </menu>
+    </item>
+</menu>

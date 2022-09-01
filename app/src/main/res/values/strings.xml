@@ -5,8 +5,8 @@
     <string name="Registerhere">New Customer? <font color='#D7A00D'> Register here</font></string>
     <string name="CLogin">Already Customer? <font color='#D7A00D'> Click here to Login</font></string>
 
-
-
+    <string name="otp_sent_mail_id">OTP has been sent to</string>
+    <string name="verify_otp">Verify OTP</string>
 
     <style name="BottomSheetStyleTheme" parent="Theme.Design.Light.BottomSheetDialog">
 
@@ -25,10 +25,34 @@
 
     </style>
 
-    <style name="selectRelationSpinner" >
+    <style name="selectRelationSpinner">
         <item name="android:text">Select Relationship</item>
         <item name="android:textSize">12sp</item>
         <!--       <item name="android:foreground">@drawable/spinner_draweble_resource</item>-->
     </style>
+
+    <string name="pls_check_your_internet_connection">Please check your internet connection</string>
+
+
+    <style name="BottomNavigationViewTextStyle">
+
+        <item name="android:textColor">@color/custom_text_color</item>
+        <item name="android:textSize">12dp</item>
+
+    </style>
+
+
+    <style name="circle">
+        <item name="android:solidColor">@color/app_bar_color</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <string name="home">Home</string>
+    <string name="offers">My Booking</string>
+    <string name="top_offer">Top Offer</string>
+    <string name="cart">Scan QR</string>
+    <string name="account">Account</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/location"
+                    android:layout_width="100dp"
+                    android:layout_height="82dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/backgorund_bottonbar"
+                    android:padding="4dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/nofound" />
+
+
+                <TextView
+                    android:id="@+id/productName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toEndOf="@+id/location"
+                    android:text="Pet Name"
+                    android:textColor="#373737"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/removeTV"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/ic_dustbin"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+
+                <TextView
+                    android:id="@+id/contactnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/productName"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@id/EditTV"
+                    android:layout_toEndOf="@+id/location"
+                    android:text="Pet Age"
+                    android:textColor="#373737"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@id/contactnumber"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@id/EditTV"
+                    android:layout_toEndOf="@+id/location"
+                    android:text="Pet category/breed"
+                    android:textColor="#373737"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/EditTV"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/removeTV"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/ic_editredcolor"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/SetasDefeult_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/address"
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/location"
+                    android:background="@drawable/ripple_effect_with_semicircle_edge"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="SET AS DEFAULT"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+             <!--   <TextView
+                    android:visibility="gone"
+                    android:id="@+id/EditTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/address"
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toStartOf="@+id/removeTV"
+
+                    android:background="@drawable/edit_text_rounded_rectangle_border"
+                    android:backgroundTint="#244494"
+                    android:paddingLeft="10dp"
+
+                    android:paddingTop="5dp"
+
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="EDIT"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />-->
+
+              <!--  <TextView
+
+                    android:id="@+id/removeTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/address"
+
+                    android:layout_alignParentRight="true"
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/ripple_effect_with_semicircle_edge"
+                    android:backgroundTint="#aa0400"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="REMOVE"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />-->
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</layout>

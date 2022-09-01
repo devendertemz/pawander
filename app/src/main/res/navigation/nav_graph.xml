@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_graph_home">
+
+
+    <fragment
+        android:id="@+id/nav_graph_home"
+        android:name="com.thetemz.pawnder.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_nav_graph_home_to_nav_graph_petlist"
+            app:destination="@id/nav_graph_petlist" />
+        <action
+            android:id="@+id/action_nav_graph_home_to_profileFragment"
+            app:destination="@id/nav_graph_account" />
+        <action
+            android:id="@+id/action_nav_graph_home_to_petFulldetailsFragment"
+            app:destination="@id/petFulldetailsFragment" />
+        <action
+            android:id="@+id/action_nav_graph_home_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_graph_petlist"
+        android:name="com.thetemz.pawnder.fragment.PetListFragment"
+        android:label="fragment_pet_list"
+        tools:layout="@layout/fragment_pet_list">
+        <action
+            android:id="@+id/action_nav_graph_petlist_to_addNewPetFragment"
+            app:destination="@id/addNewPetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_graph_account"
+        android:name="com.thetemz.pawnder.fragment.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/addNewPetFragment"
+        android:name="com.thetemz.pawnder.fragment.AddNewPetFragment"
+        android:label="add pet Fragment"
+        tools:layout="@layout/fragment_add_new_pet">
+<!--
+        <argument
+            android:name="Data"
+            android:defaultValue="@null"
+            app:argType="Data1" />-->
+    </fragment>
+    <fragment
+        android:id="@+id/petFulldetailsFragment"
+        android:name="com.thetemz.pawnder.fragment.PetFulldetailsFragment"
+        android:label=" "
+        tools:layout="@layout/fragment_pet_fulldetails"/>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.thetemz.pawnder.fragment.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+      </fragment>
+
+
+</navigation>
